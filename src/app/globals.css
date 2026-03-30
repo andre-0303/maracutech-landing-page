@@ -2,10 +2,19 @@
 
 @theme {
   --color-primary: #2e7d32;
+  --color-primary-light: #e8f5e9;
   --color-secondary: #607f5b;
   --color-tertiary: #ffd600;
+  --color-accent-yellow: #fdd835;
   --color-neutral: #747970;
+  --color-surface: #f9fbf7;
 }
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+}
+
 
 
 
