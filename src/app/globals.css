@@ -8,6 +8,7 @@
   --color-accent-yellow: #fdd835;
   --color-neutral: #747970;
   --color-surface: #f9fbf7;
+  --font-poppins: var(--font-poppins);
 }
 
 body {
