@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
-function NavItem({ children, onClick }: { children: React.ReactNode; onClick?: () => void }) {
+function NavItem({ children, href, onClick }: { children: React.ReactNode; href?: string; onClick?: () => void }) {
   return (
     <li
       className="
@@ -25,7 +25,7 @@ function NavItem({ children, onClick }: { children: React.ReactNode; onClick?: (
         hover:after:scale-x-100
       "
     >
-      <a href="#" className="inline-block" onClick={onClick}>
+      <a href={href || "#"} className="inline-block" onClick={onClick}>
         {children}
       </a>
     </li>
@@ -42,11 +42,11 @@ export default function Header() {
       {/* Desktop Nav */}
       <nav className="hidden lg:flex">
         <ul className="flex gap-10 items-center">
-          <NavItem>Início</NavItem>
-          <NavItem>Sobre</NavItem>
-          <NavItem>Serviços</NavItem>
-          <NavItem>Projetos</NavItem>
-          <NavItem>Contato</NavItem>
+          <NavItem href="#hero">Início</NavItem>
+          <NavItem href="#about">Sobre</NavItem>
+          <NavItem href="#features">Serviços</NavItem>
+          <NavItem href="#results">Projetos</NavItem>
+          <NavItem href="#contact">Contato</NavItem>
         </ul>
       </nav>
 
@@ -73,11 +73,11 @@ export default function Header() {
           </button>
           <nav className="flex-1">
             <ul className="flex flex-col gap-6 items-start">
-              <NavItem onClick={() => setIsMenuOpen(false)}>Início</NavItem>
-              <NavItem onClick={() => setIsMenuOpen(false)}>Sobre</NavItem>
-              <NavItem onClick={() => setIsMenuOpen(false)}>Serviços</NavItem>
-              <NavItem onClick={() => setIsMenuOpen(false)}>Projetos</NavItem>
-              <NavItem onClick={() => setIsMenuOpen(false)}>Contato</NavItem>
+              <NavItem href="#hero" onClick={() => setIsMenuOpen(false)}>Início</NavItem>
+              <NavItem href="#about" onClick={() => setIsMenuOpen(false)}>Sobre</NavItem>
+              <NavItem href="#features" onClick={() => setIsMenuOpen(false)}>Serviços</NavItem>
+              <NavItem href="#results" onClick={() => setIsMenuOpen(false)}>Projetos</NavItem>
+              <NavItem href="#contact" onClick={() => setIsMenuOpen(false)}>Contato</NavItem>
             </ul>
           </nav>
           <button className="mt-4 px-6 py-3 rounded-lg text-white bg-primary font-semibold w-full">

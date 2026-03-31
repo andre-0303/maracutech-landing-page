@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <section id="contato" className="py-24 px-6 md:px-10 lg:px-20 bg-surface">
+    <section id="contact" className="py-24 px-6 md:px-10 lg:px-20 bg-surface">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
         <div className="flex flex-col">
           <Image
@@ -101,7 +101,7 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="w-full bg-[#2B4B29] hover:bg-[#1E3A1C] text-white font-semibold text-[16px] py-4 rounded-2xl transition-colors cursor-pointer mt-2"
+              className="w-full bg-[#2B4B29] hover:bg-[#1E3A1C] text-white font-semibold text-[16px] py-4 rounded-2xl transition-colors cursor-pointer mt-2 px-4"
             >
               Enviar Solicitação de Consultoria
             </button>

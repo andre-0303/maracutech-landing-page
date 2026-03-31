@@ -3,7 +3,7 @@ import { CheckCircle2, MapPin, Wallet } from "lucide-react";
 
 export default function Features() {
   return (
-    <section className="py-12 lg:py-24 px-6 lg:px-10 md:px-10 bg-[#F9FBF7]">
+    <section id="features" className="py-12 lg:py-24 px-6 lg:px-10 md:px-10 bg-[#F9FBF7]">
       <div className="container mx-auto space-y-10 lg:space-y-16">
         {/* Cabeçalho da Seção */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 lg:gap-8">

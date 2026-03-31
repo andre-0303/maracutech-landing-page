@@ -3,7 +3,7 @@ import { Rocket, ArrowUpRight, Play } from "lucide-react";
 
 export default function Hero() {
   return (
-    <main className="flex-1 flex items-center px-6 md:px-10 py-12 lg:py-20 lg:px-20">
+    <main id="hero" className="flex-1 flex items-center px-6 md:px-10 py-12 lg:py-20 lg:px-20">
       <div className="container mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         {/* Lado Esquerdo: Conteúdo */}
         <div className="space-y-6 lg:space-y-8 max-w-2xl order-2 lg:order-1">

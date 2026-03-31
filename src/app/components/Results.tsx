@@ -3,7 +3,7 @@ import { Archive, ShieldCheck, Globe } from "lucide-react";
 export default function Results() {
   return (
     <>
-      <section className="py-24 px-6 md:px-10 lg:px-20 bg-gray-100">
+      <section id="results" className="py-24 px-6 md:px-10 lg:px-20 bg-gray-100">
         <div className="flex justify-center items-center flex-col">
           <h2 className="text-4xl lg:text-5xl font-medium text-[#181D17] leading-tight max-w-2xl text-center">
             Resultados que Florescem
